@@ -1,0 +1,2 @@
+- Ganti folder system
+- Ganti file app\Config. Cek App.php, Database.php, Routes.php, GroceryCrud.php, EmailConfig.php, Filepicker.php
