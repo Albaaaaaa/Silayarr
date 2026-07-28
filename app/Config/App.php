@@ -11,18 +11,9 @@ class App extends BaseConfig
     {
         parent::__construct();
 
-        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
-        $host = $this->getLocalIP();
-        $baseFolder = 'Silayar';
-
-        $this->baseURL = "{$protocol}://{$host}/{$baseFolder}/";
+        // Infinityfree Production
+        $this->baseURL = 'https://silayar-perpus.gt.tc/';
         $this->imagesURL = "{$this->baseURL}public/images/";
-    }
-
-    private function getLocalIP()
-    {
-        $ip = $_SERVER['SERVER_ADDR'] ?? $_SERVER['LOCAL_ADDR'] ?? gethostbyname(gethostname());
-        return $ip !== '::1' ? $ip : 'localhost';
     }
 
     public $imagesPath = ROOTPATH . 'public/images/';

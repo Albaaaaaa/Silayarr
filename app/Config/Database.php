@@ -31,10 +31,10 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'database' => 'aplikasi_arsip',
+		'hostname' => 'sql107.infinityfree.com',
+		'username' => 'if0_42502705',
+		'password' => 'kucingmeong12',
+		'database' => 'if0_42502705_silayar',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
